@@ -148,6 +148,8 @@ MonoBehaviour:
   vertical: 0
   smoke: {fileID: 208466532372302096}
   moveTime: 2
+  danceTime: 4
+  danceClip: {fileID: 8300000, guid: e7fa1971a86d60945bb64585c0ac14d5, type: 3}
 --- !u!95 &4536643358027616069
 Animator:
   serializedVersion: 3

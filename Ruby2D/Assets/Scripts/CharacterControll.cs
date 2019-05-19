@@ -9,8 +9,6 @@ public class CharacterControll : MonoBehaviour
     private Animator anim;
     Vector2 direction = new Vector2(1, 0);
 
-    bool isWalking = false;
-
     public float maxHealth = 5f;
     public float invicibilityTime = 2f;
     public float health { get { return currentHealth; } }//get the current health without making it pucbic
@@ -19,6 +17,7 @@ public class CharacterControll : MonoBehaviour
     bool isInvincible;
 
     AudioSource audio;
+    bool isWalking;
 
     public AudioClip shoot;
     public AudioClip getHit;
@@ -80,6 +79,7 @@ public class CharacterControll : MonoBehaviour
         float verticalinput = Input.GetAxis("Vertical");
 
         Vector2 move = new Vector2(hortizontalinput, verticalinput);//store the input
+        
 
         if(!Mathf.Approximately(move.x, 0.0f) || !Mathf.Approximately(move.y, 0.0f))//check if the input is !=0 so the direction of the spirte match
         {
@@ -96,6 +96,11 @@ public class CharacterControll : MonoBehaviour
         Vector2 position = rigidbody2.position;
         position = position + speed * move * Time.fixedDeltaTime;
         rigidbody2.MovePosition(position);
+        /*if (isWalking)
+        {
+            audio.Play();
+        }else
+            audio.Stop();*/
     }
 
     public void ChangeHealth(float health)

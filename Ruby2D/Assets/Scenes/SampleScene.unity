@@ -841,7 +841,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1387589147}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: e406c04157c663a43b859646b7ad3c2a, type: 3}
@@ -11235,6 +11235,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_audioClip
       value: 
+      objectReference: {fileID: 8300000, guid: 6bfbad8ffdf387d4e87e8fa07b62f7c1, type: 3}
+    - target: {fileID: 4536643358027616070, guid: add0088141892184994a26934252a906,
+        type: 3}
+      propertyPath: danceTime
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: add0088141892184994a26934252a906, type: 3}
@@ -11395,6 +11400,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 6265731559741727795, guid: 88ba944972cb97343bad9b63d4343133,
         type: 3}
+    - target: {fileID: 5235854450582637620, guid: 1219e3326c749a94abfa03e5aac8dabb,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1219e3326c749a94abfa03e5aac8dabb, type: 3}
 --- !u!1 &7450194043034985669 stripped
